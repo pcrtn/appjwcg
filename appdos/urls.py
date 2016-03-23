@@ -20,4 +20,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^contactos/', include('contactos.urls')),
+    url(r'^$', contactos.views.co_ini, name='co_ini'),
 ]
