@@ -20,5 +20,5 @@ from contactos.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^contactos/', include('contactos.urls')),
+    url(r'^$', include('contactos.urls')),
 ]
