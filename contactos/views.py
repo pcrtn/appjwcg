@@ -30,3 +30,6 @@ def co_view(request, pk, template_name = 'view_contactos.html'):
 		form.save()
 		return redirect('co_list')
 	return render(request, template_name, {'form':form,'cos': cos})
+
+def co_ini(request, template_name = 'inicial.html'):
+	return render(request, template_name)
